@@ -28,8 +28,8 @@
     />
   </head>
   <body>
-    <div class="container-fluid main vh-100">
-      <div class="row text-center">
+    <div class="container-fluid main vh-100 p-5">
+      <div class="row d-flex justify-content-center">
         <div class="col-7">
           <div class="logo">
             <svg
@@ -100,28 +100,76 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-10">
-          <div class="container container-principal">
-            <div class="row text-white">
-              <div class="col-4">vuelos</div>
-              <div class="col-4">hoteles</div>
-              <div class="col-4">paquetes</div>
+      <div class="row mt-5">
+        <div class="col-12">
+          <button type="button" class="custom-button px-5 py-2 rounded-top">
+            Vuelos
+          </button>
+          <button type="button" class="custom-button px-5 py-2 rounded-top">
+            Hoteles
+          </button>
+          <button type="button" class="custom-button px-5 py-2 rounded-top">
+            Paquetes
+          </button>
+          <div class="d-flex bg-white align-items-center p-4">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default"
+                >From</span
+              >
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default"
+              />
             </div>
-            <div class="row text-light">
-              <div class="col-12">
-                <label>from</label>
-                <input type="text" />
-                <label>to</label>
-                <input type="text" />
-                <label>dep</label>
-                <input type="text" />
-                <label>arr</label>
-                <input type="text" />
-              </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default"
+                >To</span
+              >
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default"
+                >DEP</span
+              >
+              <input
+                type="date"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default"
+                >ARR</span
+              >
+              <input
+                type="date"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default"
+              />
             </div>
           </div>
         </div>
+      </div>
+      <div class="row">
+        <div class="col-12 justify-content-center d-flex">
+          <div class="apps">
+            <img src="resources/appstoresmobile.png" />
+          </div>
+        </div>
+      </div>
+      <div class="login">
+        <button type="button" class="btn login__button btn-success">
+          Log In
+        </button>
       </div>
     </div>
   </body>
