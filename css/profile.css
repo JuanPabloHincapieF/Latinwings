@@ -1,0 +1,22 @@
+/* .alturaminima {
+    height: 800px;
+} */
+
+body {
+    background-image: url(../resources/backgroundimagemsfs.jpg);
+    height: 100%;
+}
+
+
+
+.list-group-item.active {
+    z-index: 2;
+    color: var(--bs-list-group-active-color);
+    background-color: #8b169e    ;
+    border: none;
+}
+
+.list-group-item {
+    background-color: transparent;
+}
+
