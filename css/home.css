@@ -1,6 +1,6 @@
 body {
   background: rgba(131, 58, 180, 0.1);
-  background-image: url(resources/backgroundimagemsfs.jpg),
+  background-image: url(../resources/backgroundimagemsfs.jpg),
     linear-gradient(180deg, rgba(39, 1, 45, 1) 0%, rgba(177, 62, 195, 1) 100%);
   background-blend-mode: multiply;
   height: 100%;
