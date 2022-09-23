@@ -1,0 +1,17 @@
+<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+     
+      <script>
+                
+               $.getJSON("https://api.ipify.org?format=json", function(data) {
+         
+         $("#ipusuario").html(data.ip);
+     })
+     </script>
+
+<center>
+    <h5>Seguridad</h5>
+    <div id="seguridad-user-loc" class="fst-italic">Hola, su ultima actualizacion de seguridad se realizo desde la direccion IP <span id="ipusuario" class="fw-bold"></span> el dia de hoy </div>
+
+</center>
