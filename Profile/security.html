@@ -1,3 +1,6 @@
+<!-- ------------comomienza el security ------------------ -->
+
+
 <script src=
 "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
     </script>
@@ -9,9 +12,29 @@
          $("#ipusuario").html(data.ip);
      })
      </script>
+<h5>Seguridad</h5>
+
+Para actualizar su contrasena, primero escriba su contrasena actual y luego repita la contrasena 
+
+<form action="/newaccount" method=post
+      oninput='up2.setCustomValidity(up2.value != up.value ? "Passwords do not match." : "")' class="d-flex flex-column gap-5 py-5">
+<div class="form-floating">
+    <input type="password" required class="form-control" id="floatingPassword" placeholder="Password" name=un>
+    <label for="floatingPassword">contraseña actual</label>
+  </div>
+  <div class="form-floating">
+    <input type="password" required class="form-control" id="floatingPassword" placeholder="Password" name=up>
+    <label for="floatingPassword">Nueva contraseña</label>
+  </div>
+  <div class="form-floating">
+    <input type="password" required class="form-control" id="floatingPassword" placeholder="Password" name=up2>
+    <label for="floatingPassword">Repita la nueva contraseña</label>
+  </div>
+  <input type=submit class="btn btn-warning" value="Save changes">
+</form>
 
 <center>
-    <h5>Seguridad</h5>
+    
     <div id="seguridad-user-loc" class="fst-italic">Hola, su ultima actualizacion de seguridad se realizo desde la direccion IP <span id="ipusuario" class="fw-bold"></span> el dia de hoy </div>
 
 </center>

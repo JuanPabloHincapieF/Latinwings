@@ -5,4 +5,5 @@ function route() {
     $("#dataprivacy").load("Profile/dataprivacy.html")
     $("#seguridad").load("Profile/security.html")
     $("#paymenthistory").load("Profile/paymenthistory.html")
+    $("#membershipsetup").load("Profile/membership.html")
   }  
