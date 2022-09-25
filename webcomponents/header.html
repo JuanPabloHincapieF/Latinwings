@@ -1,0 +1,72 @@
+<style>
+    body {
+    background-image: url(../resources/backgroundimagemsfs.jpg);
+    height: 100%;
+}
+
+
+.userpicture {
+    position: relative;
+
+}
+
+.aroanimado {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    animation: live 3s ease-in-out infinite ;
+    position: absolute;
+    top: 0;
+}
+
+.aroanimado2 {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    animation: live 3s ease-in-out 1.5s infinite ;
+    position: absolute;
+    top: 0;
+}
+
+
+.dropdown-menu.show {
+    display: block;
+    transition: 0.08s;
+}
+
+
+@keyframes live {
+    0% {
+        transform: scale(1);
+        outline: 2px solid rgba(255, 0, 0, 0);
+    }
+
+    25% {
+        outline: 2px solid rgb(255, 196, 0.7);
+    }
+
+    100% {
+        transform: scale(1.33);
+        outline: 2px solid rgba(255, 0, 0, 0);
+    }
+}
+</style>
+<body>
+    <div class="d-flex flex-row-reverse ">
+        <div class="userpicture m-3 btn-group dropstart" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img class="rounded-circle m " src="../resources/userprofilepicture.jpg" alt="profilepicture" width="80px">
+            <div class="aroanimado"></div>
+            <div class="aroanimado3"></div>
+            <div class="aroanimado2"></div>
+        </div>
+        <ul class="dropdown-menu shadow-lg">
+            <li class="text-center"><h5>Hola, Wildys</h5></li>
+            <li class="text-center bg-dark py-2"><h6 class="text-warning pt-1">VIP member</h6></li>
+            <li><a class="dropdown-item" href="#">Cambiar foto</a></li>
+            <li><a class="dropdown-item" href="/profile.html">Perfil</a></li>
+            <li><a class="dropdown-item" href="#">Cerrar sesion</a></li>
+        </ul>
+        </div>
+
+
+    </div>
