@@ -1,25 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
+<style>
+    body {
+    background-image: url(../resources/backgroundimagemsfs.jpg);
+    height: 100%;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap" rel="stylesheet" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="../css/webcomponents.css">
-</head>
 
+.userpicture {
+    position: relative;
+
+}
+
+.aroanimado {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    animation: live 3s ease-in-out infinite ;
+    position: absolute;
+    top: 0;
+}
+
+.aroanimado2 {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    animation: live 3s ease-in-out 1.5s infinite ;
+    position: absolute;
+    top: 0;
+}
+
+
+.dropdown-menu.show {
+    display: block;
+    transition: 0.08s;
+}
+
+
+@keyframes live {
+    0% {
+        transform: scale(1);
+        outline: 2px solid rgba(255, 0, 0, 0);
+    }
+
+    25% {
+        outline: 2px solid rgb(255, 196, 0.7);
+    }
+
+    100% {
+        transform: scale(1.33);
+        outline: 2px solid rgba(255, 0, 0, 0);
+    }
+}
+</style>
 <body>
-    <header class="d-flex flex-row-reverse ">
+    <div class="d-flex flex-row-reverse ">
         <div class="userpicture m-3 btn-group dropstart" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <img class="rounded-circle m " src="../resources/userprofilepicture.jpg" alt="profilepicture" width="80px">
             <div class="aroanimado"></div>
@@ -30,13 +63,10 @@
             <li class="text-center"><h5>Hola, Wildys</h5></li>
             <li class="text-center bg-dark py-2"><h6 class="text-warning pt-1">VIP member</h6></li>
             <li><a class="dropdown-item" href="#">Cambiar foto</a></li>
-            <li><a class="dropdown-item" href="#">Perfil</a></li>
+            <li><a class="dropdown-item" href="/profile.html">Perfil</a></li>
             <li><a class="dropdown-item" href="#">Cerrar sesion</a></li>
         </ul>
         </div>
 
 
-    </header>
-</body>
-
-</html>
+    </div>
