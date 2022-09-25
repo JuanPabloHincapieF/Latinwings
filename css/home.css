@@ -1,13 +1,16 @@
 body {
   background-image: url(../resources/backgroundimagemsfs.jpg);
   background-size: cover;
+  position: sticky;
+  height: 100%;
 }
 .logo {
   display: flex;
   justify-content: center;
 }
-.logo__svg {
+.logo__png {
   width: 50%;
+  min-width: 200px;
 }
 
 .custom-button {
@@ -19,8 +22,14 @@ body {
   top: 2%;
 }
 .apps {
-  position: absolute;
   bottom: 0%;
   display: flex;
   justify-content: center;
+  height: 100%;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 5%;
+}
+.apps__img {
+  width: 200px;
 }
