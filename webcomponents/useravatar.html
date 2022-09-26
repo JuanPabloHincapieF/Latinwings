@@ -34,6 +34,13 @@
     transition: 0.08s;
 }
 
+.pruebita {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+
 
 @keyframes live {
     0% {
@@ -50,9 +57,15 @@
         outline: 2px solid rgba(255, 0, 0, 0);
     }
 }
+
+p {
+    font-size: 200px;
+    color: red;
+    z-index: 10;
+}
 </style>
-<body>
-    <div class="d-flex flex-row-reverse ">
+  <div class="whenlocalstorageiswildys" id="whenlocalstorageiswildys">
+    <div class="d-flex flex-row-reverse">
         <div class="userpicture m-3 btn-group dropstart" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <img class="rounded-circle m " src="../resources/userprofilepicture.jpg" alt="profilepicture" width="80px">
             <div class="aroanimado"></div>
@@ -64,9 +77,9 @@
             <li class="text-center bg-dark py-2"><h6 class="text-warning pt-1">VIP member</h6></li>
             <li><a class="dropdown-item" href="#">Cambiar foto</a></li>
             <li><a class="dropdown-item" href="/profile.html">Perfil</a></li>
-            <li><a class="dropdown-item" href="#">Cerrar sesion</a></li>
+            <li><a class="dropdown-item" href="#" onclick="signOut()">Cerrar sesion</a></li>
         </ul>
         </div>
-
+    </div>
 
     </div>
