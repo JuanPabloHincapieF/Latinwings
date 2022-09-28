@@ -23,3 +23,13 @@ body {
     color: var(--bs-nav-pills-link-active-color);
     background-color: #3e9f5e;
 }
+
+.protegerinfo{
+    margin: -100px;
+    padding: 0;
+    background-color: #8b169e    ;
+    position: absolute;
+    height: 110%;
+    width: 120%;
+    z-index: 10;
+}
