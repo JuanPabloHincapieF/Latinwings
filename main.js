@@ -14,46 +14,53 @@ route();
 
 validateLogin();
 
-function colocarOrder(){
-  localStorage.setItem('booking', 'avianca')
+function alertaOrden() {
+  pagoRealizado();
+  setTimeout(colocarOrder, 5000);
+}
+
+function colocarOrder() {
+  localStorage.setItem("booking", "avianca");
   location.href = "profile.html";
+}
+function pagoRealizado() {
+  Swal.fire("Pago Exitoso!", "Felices vacaciones!", "success");
 }
 
 function entrarcuenta() {
-    localStorage.setItem("userName", "wildys");
-    setTimeout(mensaje, 2800)
-    const Toast = Swal.mixin({
-      toast: true,
-      position: 'top-end',
-      showConfirmButton: false,
-      timer: 2800,
-      timerProgressBar: true,
-      didOpen: (toast) => {
-        toast.addEventListener('mouseenter', Swal.stopTimer)
-        toast.addEventListener('mouseleave', Swal.resumeTimer)
-      }
-    })
-    
-    Toast.fire({
-      icon: 'success',
-      title: 'Inicio de sesion exitoso!'
-    })
-  }
+  localStorage.setItem("userName", "wildys");
+  setTimeout(mensaje, 2800);
+  const Toast = Swal.mixin({
+    toast: true,
+    position: "top-end",
+    showConfirmButton: false,
+    timer: 2800,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener("mouseenter", Swal.stopTimer);
+      toast.addEventListener("mouseleave", Swal.resumeTimer);
+    },
+  });
 
-  function mensaje(){
-    location.reload()
-  }
+  Toast.fire({
+    icon: "success",
+    title: "Inicio de sesion exitoso!",
+  });
+}
 
-function validateLogin(){
-    if(localStorage.getItem("userName") == "wildys"){
-        document.getElementById("signin").style.display = 'none';
-    } else {
-        document.getElementById("useravatar").style.display = 'none';
-    }
+function mensaje() {
+  location.reload();
+}
+
+function validateLogin() {
+  if (localStorage.getItem("userName") == "wildys") {
+    document.getElementById("signin").style.display = "none";
+  } else {
+    document.getElementById("useravatar").style.display = "none";
+  }
 }
 
 function signOut() {
-    localStorage.removeItem("userName");
-    location.href = "index.html";
-  }
- 
+  localStorage.removeItem("userName");
+  location.href = "index.html";
+}
