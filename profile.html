@@ -55,48 +55,52 @@ no-repeat
         editarPerfil()
 
     </script>
-    <div id="signin"></div>
-    <div id="useravatar"></div>
+
+    <div class="loquemejodieron d-flex">
+        <div id="signin"></div>
+        <div id="useravatar"></div>
+    </div>
+
     <!-- TERMINA EL HEADER -->
     <!-- COMIENZA CONTENEDOR CON INFORMACION DE USUARIO -->
-    <div class="container bg-light rounded-3 alturaminima mb-3 shadow-lg">
-        <div class="row py-5">
-            <div class="ladoleft col-4">
-                <div class="list-group list-group-flush" id="personalinfo-tab" role="tablist"
-                    aria-orientation="vertical">
-                    <button class="list-group-item active" id="v-pills-home-tab" data-bs-toggle="pill"
-                        data-bs-target="#personalinfo" type="button" role="tab" aria-controls="v-pills-home"
-                        aria-selected="true">Informacion Personal</button>
-                    <button class="list-group-item" id="dataprivacy-tab" data-bs-toggle="pill"
-                        data-bs-target="#dataprivacy" type="button" role="tab" aria-controls="v-pills-profile"
-                        aria-selected="false">Datos y Privacidad</button>
-                    <button class="list-group-item" id="seguridad-tab" data-bs-toggle="pill" data-bs-target="#seguridad"
-                        type="button" role="tab" aria-controls="v-pills-disabled"
-                        aria-selected="false">Seguridad</button>
-                    <button class="list-group-item" id="paymenthistory-tab" data-bs-toggle="pill"
-                        data-bs-target="#paymenthistory" type="button" role="tab" aria-controls="paymenthistory"
-                        aria-selected="false">Historial de Pagos</button>
-                    <button class="list-group-item" id="membershipsetup-tab" data-bs-toggle="pill"
-                        data-bs-target="#membershipsetup" type="button" role="tab" aria-controls="membershipsetup"
-                        aria-selected="false">Gestionar Membresia</button>
+        <div class="container bg-light rounded-3 alturaminima mb-3 shadow-lg">
+            <div class="row py-5">
+                <div class="ladoleft col-4">
+                    <div class="list-group list-group-flush" id="personalinfo-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <button class="list-group-item active" id="v-pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#personalinfo" type="button" role="tab" aria-controls="v-pills-home"
+                            aria-selected="true">Informacion Personal</button>
+                        <button class="list-group-item" id="dataprivacy-tab" data-bs-toggle="pill"
+                            data-bs-target="#dataprivacy" type="button" role="tab" aria-controls="v-pills-profile"
+                            aria-selected="false">Datos y Privacidad</button>
+                        <button class="list-group-item" id="seguridad-tab" data-bs-toggle="pill"
+                            data-bs-target="#seguridad" type="button" role="tab" aria-controls="v-pills-disabled"
+                            aria-selected="false">Seguridad</button>
+                        <button class="list-group-item" id="paymenthistory-tab" data-bs-toggle="pill"
+                            data-bs-target="#paymenthistory" type="button" role="tab" aria-controls="paymenthistory"
+                            aria-selected="false">Historial de Pagos</button>
+                        <button class="list-group-item" id="membershipsetup-tab" data-bs-toggle="pill"
+                            data-bs-target="#membershipsetup" type="button" role="tab" aria-controls="membershipsetup"
+                            aria-selected="false">Gestionar Membresia</button>
+                    </div>
                 </div>
-            </div>
-            <div class="ladoright col-8 border-start border-2 mb-3">
-                <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="personalinfo" role="tabpanel"
-                        aria-labelledby="personalinfo-tab" tabindex="0"></div>
-                    <div class="tab-pane fade" id="dataprivacy" role="tabpanel" aria-labelledby="dataprivacy-tab"
-                        tabindex="0">Profile</div>
-                    <div class="tab-pane fade" id="seguridad" role="tabpanel" aria-labelledby="seguridad-tab"
-                        tabindex="0"></div>
-                    <div class="tab-pane fade" id="paymenthistory" role="tabpanel" aria-labelledby="paymenthistory-tab"
-                        tabindex="0"></div>
-                    <div class="tab-pane fade" id="membershipsetup" role="tabpanel"
-                        aria-labelledby="membershipsetup-tab" tabindex="0">...</div>
+                <div class="ladoright col-8 border-start border-2 mb-3">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="personalinfo" role="tabpanel"
+                            aria-labelledby="personalinfo-tab" tabindex="0"></div>
+                        <div class="tab-pane fade" id="dataprivacy" role="tabpanel" aria-labelledby="dataprivacy-tab"
+                            tabindex="0">Profile</div>
+                        <div class="tab-pane fade" id="seguridad" role="tabpanel" aria-labelledby="seguridad-tab"
+                            tabindex="0"></div>
+                        <div class="tab-pane fade" id="paymenthistory" role="tabpanel"
+                            aria-labelledby="paymenthistory-tab" tabindex="0"></div>
+                        <div class="tab-pane fade" id="membershipsetup" role="tabpanel"
+                            aria-labelledby="membershipsetup-tab" tabindex="0">...</div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     <!-- JQUERY -->
     <script src="main.js"></script>
 </body>
