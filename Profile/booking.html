@@ -1,0 +1,44 @@
+<!-- ------------historial de pagos------------------ -->
+
+<div id="notienes"><center><h4>No tienes reservas</h4></center></div>
+<div id="activebookings">
+    <h5>Historial de reservas Wildys Hernandez</h5>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#REF</th>
+                    <th scope="col">Total</th>
+                    <th scope="col">Ida</th>
+                    <th scope="col">Vuelta</th>
+                    <th scope="col">Hotel</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">B-7862</th>
+                    <td>01/10/2022</td>
+                    <td>01/10/2022<br><b>FL: AV9540 </b><br>06:35 AM</td>
+                    <td>08/10/2022<br><b>FL: AV8556 </b><br>05:35 AM</td>
+                    <td> Las Americas Torres de Mar<br>
+                        <div class="bg-success text-white">Confirmado</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<script>
+
+    validateBookings()
+
+    function validateBookings() {
+        if (localStorage.getItem("booking") == "avianca") {
+            document.getElementById("notienes").style.display = 'none';
+        } else {
+            document.getElementById("activebookings").style.display = 'none';
+        }
+    }
+</script>

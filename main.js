@@ -8,10 +8,16 @@ function route() {
   $("#membershipsetup").load("Profile/membership.html");
   $("#useravatar").load("webcomponents/useravatar.html");
   $("#signin").load("webcomponents/signin.html");
+  $("#booking").load("Profile/booking.html");
 }
 route();
 
 validateLogin();
+
+function colocarOrder(){
+  localStorage.setItem('booking', 'avianca')
+  location.href = "profile.html";
+}
 
 function entrarcuenta() {
     localStorage.setItem("userName", "wildys");
